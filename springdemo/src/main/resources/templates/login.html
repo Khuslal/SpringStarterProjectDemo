@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>	
-	<head></head>
-	<title>Login</title>
+<html>
+
+<head></head>
+<title>Login</title>
+
+<body>
+
+	<h1>Login Page</h1>
+	<hr>
 	
-	<body>
-		
-		<h1>Login Page</h1>
-		<p>View Your Profile Details</p>
-		<a href="/profile">Profile</a>
-		
-	</body>
+	<p style="color: red;">[[${error}]]</p><br>
+	<form action="/LoginController" method="post">
+		<label>Username :</label>
+		<input type="text" name="username">
+		<br>
+		<label>Password :</label>
+		<input type="password" name="password">
+		<br>
+		<input type="submit" value="Login">
+	</form>
+
+</body>
+
 </html>
